@@ -1,3 +1,3 @@
-# Scripts
+** Scripts **
 
-Some useful scripts for everyday use
+Useful scripts for everyday use
