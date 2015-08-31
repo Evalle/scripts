@@ -1,10 +1,11 @@
 #!/bin/bash
 #: Title            : dispon
-#: Date             : 18.08.15
+#: Date             : 31.08.15
 #: Author           : "Evgeny Shmarnev" <shmarnev@gmail.com>
 #: Version          : 1.0
 #: Description      : Display configuration via `xrandr` for my workspace at SUSE
 #: Options          : None
+
 xrandr --output eDP1 --auto 
 xrandr --output DP1-1 --auto --mode 1920x1080 --above eDP1 --noprimary
 xrandr --output DP1-2 --auto --mode 1920x1080 --right-of DP1-1 --rotate left --noprimary
