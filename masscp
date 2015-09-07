@@ -1,0 +1,8 @@
+#!/bin/bash
+
+HOSTSFILE=$1
+HOSTS=`cat $HOSTSFILE`
+
+for line in $HOSTS ; do
+    scp $2 $line:~/tmp
+done
