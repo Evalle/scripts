@@ -1,8 +1,14 @@
 #!/bin/bash
+#: Title        :   masscp
+#: Date         :   08-09-2015
+#: Author       :   "Evgeny Shmarnev" <shmarnev@gmail.com>
+#: Version      :   1.0
+#: Description  :   copy files($2) to hosts from the external list of the hosts ($2)
+#: Options      :   $1 arg - file with hosts, $2 arg - filename
 
 HOSTSFILE=$1
 HOSTS=`cat $HOSTSFILE`
 
 for line in $HOSTS ; do
-    scp $2 $line:~/tmp
+    scp $2 $line:/tmp
 done
