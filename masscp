@@ -4,7 +4,7 @@
 #: Author       :   "Evgeny Shmarnev" <shmarnev@gmail.com>
 #: Version      :   1.0
 #: Description  :   copy files($2) to hosts from the external list of the hosts ($1)
-#: Options      :   $1 arg - file with hosts, $2 arg - filename
+#: Arguments    :   $1 - file with list of the hosts inside of it(see example for more info), $2 - file which need to be copied to remote hosts
 
 HOSTSFILE=$1
 HOSTS=`cat $HOSTSFILE`
